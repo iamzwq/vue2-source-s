@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>vue2-source</title>
+	</head>
+	<body>
+		<script src="vue.js"></script>
+		<script>
+			const vm = new Vue({
+				data() {
+					return {
+						name: "zwq",
+						age: 18,
+						adress: {
+							num: 1024,
+							content: "China",
+						},
+						hobby: ["eating", "drinking", { a: 1 }],
+					};
+				},
+			});
+			// vm._data.name = 'cc'
+			// vm.name = '33'
+			// vm.adress = {
+			// 	num: 1025
+			// }
+			// vm.adress.content = "Hefei";
+			// vm.hobby.unshift({a: 2})
+			// console.log(vm.hobby);
+		</script>
+	</body>
+</html>
